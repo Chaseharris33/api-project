@@ -1,5 +1,0 @@
-testUser
-testPass
-
-messageUser
-messagePass

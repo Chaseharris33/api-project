@@ -48,7 +48,7 @@ const Posts=(props)=>
     {
         setSearch(event.target.value);
     }}/>
-    {token ? <h2 onClick={()=>{setShowCreatePost(!showCreatePost)}}>Show/Hide Post form</h2> : null}
+    {token ? <h2 onClick={()=>{setShowCreatePost(!showCreatePost)}}>Click here to create a post</h2> : null}
     {showCreatePost ? <PostForm token={token} fetchPosts={fetchPosts} setShowCreatePost={setShowCreatePost}/>:null}
     <div>
         {matchPosts.map((post)=>
