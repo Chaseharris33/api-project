@@ -14,7 +14,7 @@ const PostForm =(props)=>
     const [price,setPrice]=useState(post ? post.price:"");
     const [location,setLocation]=useState(post ? post.location:"");
     const [willDeliver,setWillDeliver]=useState(post ? post.willDeliver:false);
-    const [message,setMessage]=useState("Fill out the form. Title, Description, and Price are required. Location will default to [On Request] if left empty.");
+    const [message,setMessage]=useState("Fill out the form. Title, Description, and Price are required.");
     
     return <form className="PostForm" onSubmit={(event)=>
     {
